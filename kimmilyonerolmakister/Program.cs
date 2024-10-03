@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace kimmilyonerolmakister
 {
@@ -27,21 +27,20 @@ namespace kimmilyonerolmakister
             if (cevap != null)
             {
                 if (cevap == "a")
+                {
                     Console.WriteLine("Doğru Cevap Lama");
-                soru1Dogru = true;
+                    soru1Dogru = true;
+                }
+                
+                else
+                {
+                    Console.WriteLine("Yanlış cevap: Doğru cevap Lama olacaktı.");
+                }
+
             }
 
 
-            else if (cevap == "b ")
-            {
-                Console.WriteLine("Yanlış cevap: Doğru cevap Lama olacaktı.");
-            }
-
-            else
-            {
-                Console.WriteLine("geçersiz cevap");
-            }
-
+            
 
 
             Console.WriteLine("2 -> Dünya'ya en yakın gezegen hangisidir ?");
@@ -54,22 +53,18 @@ namespace kimmilyonerolmakister
             if (cevap2 != null)
             {
                 if (cevap2 == "a")
+                {
                     Console.WriteLine("Doğru cevap Venüs");
-                soru2Dogru = true;
+                    soru2Dogru = true;
+                }
+
+                else
+                {
+                    Console.WriteLine("Yanlış cevap: Doğru cevap Venüs olacaktı.");
+                }
             }
 
-
-            else if (cevap2 == "b")
-            {
-                Console.WriteLine("Yanlış cevap: Doğru cevap Venüs olacaktı.");
-            }
-
-            else
-            {
-                Console.WriteLine("geçersiz cevap");
-            }
-
-
+            
 
             if (soru1Dogru && soru2Dogru)
             {
@@ -83,17 +78,30 @@ namespace kimmilyonerolmakister
             Console.WriteLine("    ");
             Console.WriteLine("Sorunun cevabı nedir?");
             string cevap3 = Console.ReadLine().ToLower();
+            bool soru3Dogru=false; 
 
             if (cevap3 != null)
             {
-                if (cevap3 == "a")
-                    Console.WriteLine("Yanlış cevap: Doğru cevap 12 olacaktı");
-                else if (cevap3 == "b")
+                if (cevap3 == "b")
+                {
                     Console.WriteLine("Doğru cevap 12");
+                    soru3Dogru = true;
+                }
+
                 else
-                    Console.WriteLine("geçersiz cevap");
+                {
+                    Console.WriteLine("Yanlış cevap: Doğru cevap 12 olacaktı");
+                }
+                    
 
             }
+
+            if ( soru3Dogru )
+            {
+                Console.WriteLine(" Yarışmayı kaybettiniz.");
+            }
+                
+
 
 
 
@@ -116,7 +124,6 @@ namespace kimmilyonerolmakister
         }
     }
 }
-
 
 
 
